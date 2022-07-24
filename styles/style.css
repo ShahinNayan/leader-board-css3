@@ -34,7 +34,7 @@ main {
 .container {
     background-color: #FFFFFF;
     width: 870px;
-    height: 679px;
+    /* height: 679px; */
     padding: 30px;
     margin-top: 21px;
     border-radius: 5px;
@@ -100,7 +100,7 @@ hr {
 /* courses style */
 .latest-course{
     width: 870px;
-    height: 362px;
+    /* height: 362px; */
     border-radius: 5px;
     margin-top: 21px;
     margin-bottom: 28px;
@@ -154,6 +154,10 @@ hr {
     .container {
         width: 100%;
     }
+    .courses{
+        grid-row-gap: 50px;
+    }
+
 
     .players,
     .blogs, .courses
@@ -173,6 +177,12 @@ hr {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container {
         width: 100%;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        grid-row-gap: 50px;
     }
 
     .players,
